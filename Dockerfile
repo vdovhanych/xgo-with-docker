@@ -1,4 +1,4 @@
-FROM docker:stable-dind
+FROM docker:stable
 
 RUN apk add --no-cache ca-certificates
 
