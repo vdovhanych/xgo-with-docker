@@ -1,4 +1,4 @@
-FROM docker:17.09.0-ce
+FROM docker:17.09.0-ce-dind
 
 RUN apk add --no-cache ca-certificates
 
