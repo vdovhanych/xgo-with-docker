@@ -22,4 +22,4 @@ Without point number 2 and 3, i couldn't get the built binary in the GitLab pipe
 
 ## Docker Hub
 
-This **Docker** image is available on [Docker Hub][https://hub.docker.com/r/ykyuen/xgo-with-docker/].
+This **Docker** image is available on [Docker Hub](https://hub.docker.com/r/ykyuen/xgo-with-docker/).
