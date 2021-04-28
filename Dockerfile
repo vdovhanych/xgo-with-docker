@@ -1,11 +1,10 @@
-FROM docker:17.09.0-ce
+FROM docker:20.10.6
 
 RUN apk add --no-cache ca-certificates
 
-ENV GOLANG_VERSION 1.8.5
+ENV GOLANG_VERSION 1.16.3
 
-# https://golang.org/issue/14851 (Go 1.8 & 1.7)
-# https://golang.org/issue/17847 (Go 1.7)
+
 COPY *.patch /go-alpine-patches/
 
 RUN set -eux; \
@@ -58,4 +57,4 @@ COPY go-wrapper /usr/local/bin/
 # Install xgo
 RUN \
 	apk add --no-cache git && \
-	go get github.com/ykyuen/xgo
+	go get github.com/vdovhanych/xgo
